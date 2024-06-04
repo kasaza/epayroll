@@ -1,6 +1,10 @@
 
 <?php  
+<<<<<<< HEAD
  $connect = mysqli_connect("localhost", "root", "", "hrm");  
+=======
+ $connect = mysqli_connect("remotemysql.com", "TFAhTVfagm", "6khKBw8IRi", "TFAhTVfagm");  
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
  $query = "SELECT * FROM departments ORDER BY id DESC";  
  $result = mysqli_query($connect, $query);  
  ?> 
@@ -298,7 +302,11 @@
 			 }  
 		});  
 		swal({title:'Success!', text:'Department Successfuly Added!', type: 'success', 
+<<<<<<< HEAD
 			 onClose: function () {window.location.href='departments.php';}
+=======
+			 onClose: function () {window.location.href='departments';}
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 			}); 
 		}
 	  }

@@ -10,9 +10,15 @@ if($reg_user->is_logged_in()!="")
   $stmt->execute(array(":id_no"=>$_SESSION['userSession']));
   $row = $stmt->fetch(PDO::FETCH_ASSOC);
   if($row['role']=="admin"){
+<<<<<<< HEAD
     $reg_user->redirect('employee.php');
   }else if($row['role']=="user"){
     $reg_user->redirect('employee/emphome.php');
+=======
+    $reg_user->redirect('employee');
+  }else if($row['role']=="user"){
+    $reg_user->redirect('employee/emphome');
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
   }
 }
 
@@ -77,7 +83,11 @@ if(isset($_POST['btn-signup']))
 <body class="">
           <!-- Navigation -->
 		<div class="navbar">
+<<<<<<< HEAD
 			<b><center>E-Payroll Staff Registration<a href="login.php" class="btn btn-register" type="submit" name="btn-login">Login</a></center></b>
+=======
+			<b><center>E-Payroll Staff Registration<a href="login" class="btn btn-register" type="submit" name="btn-login">Login</a></center></b>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 		</div>
             <div class="col-md-4">
                 <div class="login-panel panel panel-default">

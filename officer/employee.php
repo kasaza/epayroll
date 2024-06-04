@@ -1,5 +1,9 @@
 <?php  
+<<<<<<< HEAD
  $connect = mysqli_connect("localhost", "root", "", "hrm");  
+=======
+ $connect = mysqli_connect("remotemysql.com", "TFAhTVfagm", "6khKBw8IRi", "TFAhTVfagm");    
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
  $query = "SELECT * FROM tbl_employee ORDER BY id DESC";  
  $result = mysqli_query($connect, $query);  
  ?> 
@@ -11,7 +15,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta charset="utf-8">
+<<<<<<< HEAD
 <title>E-Payroll System > Staff</title>  
+=======
+<title>E-Payroll System > Staff Records</title>  
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 <?php include '../includes/links.php'; ?>
 </head>
 <body style="" class="">
@@ -25,14 +33,22 @@
 <div class="page-head">
     <ol class="breadcrumb">
         <li><a href=""><i class="fa fa-users fa-fw"></i>  Employee</a></li>
+<<<<<<< HEAD
         <li class="active"><i class="fa fa-book fa-fw"></i>  Staff</li>
+=======
+        <li class="active"><i class="fa fa-book fa-fw"></i>  Staff Records</li>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 		 <button type="button" name="add" id="add" data-toggle="modal" data-target="#add_data_Modal" class="btn btn-danger right">New Employee +</button>
     </ol> 
 </div>
 <!-------MAIN CONTENT------>
 <div class="main-content">
 	<ul class="nav nav-tabs">
+<<<<<<< HEAD
 		<li class="active"><a href="employee.php">Employee Information</a></li>
+=======
+		<li class="active"><a href="employee">Employee Information</a></li>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 	</ul>
 <!-------END OF MAIN CONTENT------>
 	<div class="tab-content col-kk-12">
@@ -178,7 +194,11 @@
 						  <label class="col-sm-4 control-label">Department:</label>
 						  <div class="col-sm-8">
 						  <?php
+<<<<<<< HEAD
 							$host = 'localhost'; $user = 'root'; $pass = ''; $db = 'hrm';
+=======
+							$host = 'remotemysql.com'; $user = 'TFAhTVfagm'; $pass = '6khKBw8IRi'; $db = 'TFAhTVfagm';
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 							$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 							?>
 							<select id="department" name="department" class="form-control text-center" >

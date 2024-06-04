@@ -20,7 +20,11 @@
 <div class="am-content">
 <div class="page-head">
     <ol class="breadcrumb">
+<<<<<<< HEAD
         <li><a href=""><i class="fa fa-tasks fa-fw"></i>  Payroll Data</a></li>
+=======
+        <li><a href=""><i class="fa fa-tasks fa-fw"></i>  Transactions</a></li>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
         <li class="active"><i class="fa fa-envelope fa-fw"></i>  SMS & Mails</li>
     </ol>
 </div>
@@ -29,7 +33,11 @@
 <div class="main-content">
 <div class="row">
   <ul class="nav nav-tabs">
+<<<<<<< HEAD
 	<li><a href="payroll.php">Payroll Data</a></li>
+=======
+	<li><a href="payroll">Transactions</a></li>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 	<li class="active"><a href="#">SMS & Mail</a></li>
   </ul>
 <!-------END OF MAIN CONTENT/ START OF MAIL TAB------>
@@ -127,7 +135,11 @@
 						  ?>
 						<script>
 						 swal({title:'Success...!', text:'Message was Successfully Sent!', type: 'success', 
+<<<<<<< HEAD
 						 onClose: function () {window.location.href='sms.php';} });
+=======
+						 onClose: function () {window.location.href='sms';} });
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 						</script>
 						<?php 
 						}
@@ -162,7 +174,11 @@
 						 ?>
 						<script>
 						 swal({title:'Success...!', text:'Message was Successfully Sent to User!', type: 'success', 
+<<<<<<< HEAD
 						 onClose: function () {window.location.href='sms.php';} });
+=======
+						 onClose: function () {window.location.href='sms';} });
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 						</script>
 						<?php 
 						}
@@ -182,7 +198,11 @@
 				<div class="form-group  col-sm-8 " style="margin-left:-10px; ">
 				<label>Recipients (All Staff):</label>
 				<?php
+<<<<<<< HEAD
 					$connect = new PDO('mysql:host=localhost;dbname=hrm', 'root', '');
+=======
+					$connect = new PDO('mysql:host=remotemysql.com;dbname=TFAhTVfagm', 'TFAhTVfagm', '6khKBw8IRi'); 
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 					$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 					$stmt = $connect->prepare("SELECT GROUP_CONCAT(phone) AS phone FROM tbl_employee");
 					$stmt->execute();
@@ -234,7 +254,11 @@
 			<table id="sel_email" class="table table-bordered table-striped">
 				<tr><th></th><th>ID</th><th>Name</th><th>Phone</th></tr>
 				<?php 
+<<<<<<< HEAD
 				$connect = mysqli_connect("localhost", "root", "", "hrm");  	  
+=======
+				$connect = mysqli_connect("remotemysql.com", "TFAhTVfagm", "6khKBw8IRi", "TFAhTVfagm"); 						
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 				$query = "SELECT * FROM tbl_employee";  
 				$result = mysqli_query($connect, $query); 
 				   while($row = mysqli_fetch_array($result))  
@@ -270,7 +294,11 @@
 			<table id="sel_phone" class="table table-bordered table-striped">
 				<tr><th></th><th>ID</th><th>Name</th><th>Phone</th></tr>
 				<?php 
+<<<<<<< HEAD
 				$connect = mysqli_connect("localhost", "root", "", "hrm");  	  
+=======
+				$connect = mysqli_connect("remotemysql.com", "TFAhTVfagm", "6khKBw8IRi", "TFAhTVfagm"); 	  
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 				$query = "SELECT * FROM tbl_employee";  
 				$result = mysqli_query($connect, $query); 
 				   while($row = mysqli_fetch_array($result))  

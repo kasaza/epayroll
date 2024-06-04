@@ -64,6 +64,7 @@ class USER
        if($userRow['role']=="admin"){
          $_SESSION['userSession'] = $type;
          $_SESSION['userSession'] = $userRow['id_no'];
+<<<<<<< HEAD
          echo "<script>window.location.assign('../index.php')</script>";
        }else if($userRow['role']=="user"){
          $_SESSION['userSession'] = $type;
@@ -73,17 +74,36 @@ class USER
          $_SESSION['userSession'] = $type;
          $_SESSION['userSession'] = $userRow['id_no'];
          echo "<script>window.location.assign('../officer/employee.php')</script>";
+=======
+         echo "<script>window.location.assign('../index')</script>";
+       }else if($userRow['role']=="user"){
+         $_SESSION['userSession'] = $type;
+         $_SESSION['userSession'] = $userRow['id_no'];
+         echo "<script>window.location.assign('emphome')</script>";
+       }else if($userRow['role']=="officer"){
+         $_SESSION['userSession'] = $type;
+         $_SESSION['userSession'] = $userRow['id_no'];
+         echo "<script>window.location.assign('../officer/employee')</script>";
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
        }
      }
      else
      {
+<<<<<<< HEAD
       header("Location: login.php?error");
+=======
+      header("Location: login?error");
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
       exit;
      }
    }
    else
    {
+<<<<<<< HEAD
     header("Location: login.php?error");
+=======
+    header("Location: login?error");
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
     exit;
    }
  }catch(PDOException $ex)

@@ -1,6 +1,10 @@
 
 <?php 
+<<<<<<< HEAD
 $connect = mysqli_connect("localhost", "root", "", "hrm");
+=======
+$connect = mysqli_connect("remotemysql.com", "TFAhTVfagm", "6khKBw8IRi", "TFAhTVfagm");  
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 $query = "SELECT * FROM allowances WHERE all_id='1'";  
 $result = mysqli_query($connect, $query); 
 ?>  
@@ -32,10 +36,17 @@ $result = mysqli_query($connect, $query);
 <div class="main-content">
 	<div class="widget">
 	<ul class="nav nav-tabs">
+<<<<<<< HEAD
 		<li><a href="earnings.php">Earnings</a></li>
 		<li class="active"><a href="#"> Allowances</a></li>
 		<li><a href="deductions.php">Deductions</a></li>
 		<li><a href="banks.php">Banks</a></li>
+=======
+		<li><a href="earnings">Earnings</a></li>
+		<li class="active"><a href="#"> Allowances</a></li>
+		<li><a href="deductions">Deductions</a></li>
+		<li><a href="banks">Banks</a></li>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 	</ul>
 	<div class="tab-content col-kk-12">
 	<!-------Allowances TABLE------>
@@ -394,7 +405,11 @@ $(document).on('click', '.delete_data', function(){
 			 }  
 		});  
 		swal({title:'Success!', text:'J-Group Successfuly Saved!', type: 'success', 
+<<<<<<< HEAD
 			 onClose: function () {window.location.href='allowances.php';}
+=======
+			 onClose: function () {window.location.href='allowances';}
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 			});  
 		}
 	}

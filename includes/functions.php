@@ -49,4 +49,9 @@
 	  }  
 	  return $output;  
  }  
+<<<<<<< HEAD
  ?>
+=======
+ ?>
+ 
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7

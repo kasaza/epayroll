@@ -11,7 +11,11 @@
 					<i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
 				  </a>
 				  <ul class="dropdown-right dropdown-user">
+<<<<<<< HEAD
 					  <li><a href="../users/logout.php"><i class="fa fa-sign-out fa-fw"></i><strong> Logout</strong></a>
+=======
+					  <li><a href="../users/logout"><i class="fa fa-sign-out fa-fw"></i><strong> Logout</strong></a>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 					  </li>
 				  </ul>
 			  </li>

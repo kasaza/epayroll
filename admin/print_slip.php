@@ -9,7 +9,11 @@ class Pdf extends Dompdf{
 	}
 }
 	
+<<<<<<< HEAD
 $connect = new PDO('mysql:host=localhost;dbname=hrm', 'root', '');
+=======
+$connect = new PDO('mysql:host=remotemysql.com;dbname=TFAhTVfagm', 'TFAhTVfagm', '6khKBw8IRi');
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 //print_invoice.php
 if(isset($_GET["pdf"]) && isset($_GET["id"]))
 {

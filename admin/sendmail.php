@@ -24,7 +24,11 @@
 		if($error == '')
 		{
 			
+<<<<<<< HEAD
 			$connect = new PDO('mysql:host=localhost;dbname=hrm', 'root', '');
+=======
+			$connect = new PDO('mysql:host=remotemysql.com;dbname=TFAhTVfagm', 'TFAhTVfagm', '6khKBw8IRi');
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 			$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$stmt = $connect->prepare("SELECT * FROM tbl_employee INNER JOIN payroll ON tbl_employee.id_no = payroll.id_no ");
 			$stmt->execute();
@@ -124,7 +128,11 @@
 			?>
 			<script>
 			 swal({title:'Success...!', text:'Mail was Successfully Sent!', type: 'success', 
+<<<<<<< HEAD
 			 onClose: function () {window.location.href='sms.php';} });
+=======
+			 onClose: function () {window.location.href='sms';} });
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 			</script>
 			<?php 
 			}
@@ -163,7 +171,11 @@
 			?>
 			<script>
 			 swal({title:'Success...!', text:'Mail was Successfully Sent to All Staff!', type: 'success', 
+<<<<<<< HEAD
 			 onClose: function () {window.location.href='sms.php';} });
+=======
+			 onClose: function () {window.location.href='sms';} });
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 			</script>
 			<?php 
 			}

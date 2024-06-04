@@ -42,7 +42,11 @@ if (version_compare(PHP_VERSION, '5.1.2', '>=')) {
      * Fall back to traditional autoload for old PHP versions
      * @param string $classname The name of the class to load
      */
+<<<<<<< HEAD
     function spl_autoload_register($classname)
+=======
+    function __autoload($classname)
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
     {
         PHPMailerAutoload($classname);
     }

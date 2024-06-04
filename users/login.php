@@ -9,11 +9,19 @@ if($user_login->is_logged_in()!="")
   $stmt->execute(array(":id_no"=>$_SESSION['userSession']));
   $row = $stmt->fetch(PDO::FETCH_ASSOC);
   if($row['role']=="admin"){
+<<<<<<< HEAD
     $user_login->redirect('../index.php');
   }else if($row['role']=="user"){
     $user_login->redirect('emphome.php');
   }else if($row['role']=="officer"){
     $user_login->redirect('../officer/employee.php');
+=======
+    $user_login->redirect('../index');
+  }else if($row['role']=="user"){
+    $user_login->redirect('emphome');
+  }else if($row['role']=="officer"){
+    $user_login->redirect('../officer/employee');
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
   }
 }
 
@@ -43,7 +51,11 @@ if(isset($_POST['btn-login']))
 <body>
   <!-- Navigation -->
   <div class="navbar">
+<<<<<<< HEAD
 	<b><center>E-Payroll Login<a href="signup.php" class="btn btn-register" type="submit" name="btn-login">Register</a></center></b>
+=======
+	<b><center>E-Payroll Login<a href="signup" class="btn btn-register" type="submit" name="btn-login">Register</a></center></b>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
   </div>
 	<div class="col-md-4 ">
 		<div class="login-panel panel panel-default">

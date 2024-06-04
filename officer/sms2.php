@@ -62,7 +62,11 @@
 				 ?>
 				<script>
 				 swal({title:'Success...!', text:'Message was Successfully Sent to User!', type: 'success', 
+<<<<<<< HEAD
 				 onClose: function () {window.location.href='sms.php';} });
+=======
+				 onClose: function () {window.location.href='sms';} });
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 				</script>
 				<?php 
 				}
@@ -84,7 +88,11 @@
 			  <label class="col-sm-4 control-label">Recipient:</label>
 			  <div class="col-sm-8">
 			  <?php
+<<<<<<< HEAD
 				$host = 'localhost'; $user = 'root'; $pass = ''; $db = 'hrm';
+=======
+				$connect = new PDO('mysql:host=remotemysql.com;dbname=TFAhTVfagm', 'TFAhTVfagm', '6khKBw8IRi');
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 				$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 				?>
 				<select id="sel_phone" name="sel_phone" class="form-control text-center" >

@@ -1,4 +1,5 @@
 <?php  
+<<<<<<< HEAD
  $connect = mysqli_connect("localhost", "root", "", "hrm");  
 
 session_start();
@@ -15,6 +16,24 @@ $stmt = $user_home->runQuery("SELECT * FROM tbl_users WHERE id_no=:id_no");
 //$stmt = $user_home->runQuery("SELECT * FROM tbl_users INNER JOIN tbl_employee ON tbl_users.id_no = tbl_employee.id_no WHERE tbl_users.id_no=:id_no");
 $stmt->execute(array(":id_no"=>$_SESSION['userSession']));
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
+=======
+	$connect = mysqli_connect("remotemysql.com", "TFAhTVfagm", "6khKBw8IRi", "TFAhTVfagm");  
+
+	session_start();
+	require_once '../users/class.user.php';
+	$user_home = new USER();
+
+	if(!$user_home->is_logged_in())
+	{
+	 $user_home->redirect('login');
+	}
+
+	$connect = new PDO('mysql:host=remotemysql.com;dbname=TFAhTVfagm', 'TFAhTVfagm', '6khKBw8IRi');
+	$stmt = $user_home->runQuery("SELECT * FROM tbl_users WHERE id_no=:id_no");
+	//$stmt = $user_home->runQuery("SELECT * FROM tbl_users INNER JOIN tbl_employee ON tbl_users.id_no = tbl_employee.id_no WHERE tbl_users.id_no=:id_no");
+	$stmt->execute(array(":id_no"=>$_SESSION['userSession']));
+	$row = $stmt->fetch(PDO::FETCH_ASSOC);
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 
 ?>
 
@@ -76,7 +95,11 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 					<i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
 				  </a>
 				  <ul class="dropdown-right dropdown-user">
+<<<<<<< HEAD
 					  <li><a href="../users/logout.php"><i class="fa fa-sign-out fa-fw"></i><strong> Logout</strong></a>
+=======
+					  <li><a href="../users/logout"><i class="fa fa-sign-out fa-fw"></i><strong> Logout</strong></a>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 					  </li>
 				  </ul>
 			  </li>
@@ -92,7 +115,11 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <ol class="breadcrumb">
         <li><a href=""><i class="fa fa-windows fa-fw"></i>  Employee</a></li>
         <li class="active"><i class="fa fa-book fa-fw"></i>  Employee Records</li>
+<<<<<<< HEAD
 		<a id="btnPrint1" class="btn btn-black fl_right" target="blank_" href="print_slip.php?pdf=1&id='<?php echo $row["uname"] ?>'" >Print Slip</a>  
+=======
+		<a id="btnPrint1" class="btn btn-black fl_right" target="blank_" href="print_slip?pdf=1&id='<?php echo $row["uname"] ?>'" >Print Slip</a>  
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
     </ol> 
 </div>
 <!-------MAIN CONTENT------>
@@ -162,7 +189,11 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 			</header>
 			<div id="div-1" class="body collapse in">
 				 <?php  	
+<<<<<<< HEAD
 			 $connect = new PDO('mysql:host=localhost;dbname=hrm', 'root', '');
+=======
+			$connect = new PDO('mysql:host=remotemysql.com;dbname=TFAhTVfagm', 'TFAhTVfagm', '6khKBw8IRi');
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 			 $stmt = $user_home->runQuery("SELECT * FROM tbl_users INNER JOIN payroll ON tbl_users.id_no = payroll.id_no WHERE tbl_users.id_no=:id_no");
 			 $stmt->execute(array(":id_no"=>$_SESSION['userSession']));
 			  $all_result = $stmt->fetchAll();

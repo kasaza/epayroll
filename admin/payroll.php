@@ -17,7 +17,11 @@
 <?php include '../includes/admin_nav.php'; ?>
 <!--============LOADING FROM ALL DATABASE TABLES=============-->
 <?php  
+<<<<<<< HEAD
 $connect = mysqli_connect("localhost", "root", "", "hrm");  
+=======
+$connect = mysqli_connect("remotemysql.com", "TFAhTVfagm", "6khKBw8IRi", "TFAhTVfagm");  
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
   
 $query = "SELECT * FROM designation";  
 $result = mysqli_query($connect, $query);   
@@ -75,17 +79,29 @@ while($row = mysqli_fetch_array($result))
 <div class="am-content">
 <div class="page-head">
     <ol class="breadcrumb">
+<<<<<<< HEAD
         <li><a href=""><i class="fa fa-tasks fa-fw"></i>  Payroll Data</a></li>
         <li class="active"><i class="fa fa-book fa-fw"></i>  Payroll Data</li>
 		<button type="button" name="add" id="add" data-toggle="modal" data-target="#add_data_Modal" class="btn btn-danger right" title="Add New Staff Record">New Record +</button>
 		<a href="pdf.php"  class="btn btn-danger right" target="_blank" class="fl_right" title="Print the Official Report"><i class="fa fa-print fa-fw"></i> Official Report</a>
+=======
+        <li><a href=""><i class="fa fa-tasks fa-fw"></i>  Payroll Transactions</a></li>
+        <li class="active"><i class="fa fa-book fa-fw"></i>  Transactions</li>
+		<button type="button" name="add" id="add" data-toggle="modal" data-target="#add_data_Modal" class="btn btn-danger right" title="Add New Staff Record">New Record +</button>
+		<a href="pdf"  class="btn btn-danger right" target="_blank" class="fl_right" title="Print the Official Report"><i class="fa fa-print fa-fw"></i> Official Report</a>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
     </ol>
 </div>
 <!-------MAIN CONTENT------>
 <div class="main-content">
 	<ul class="nav nav-tabs">
+<<<<<<< HEAD
 		<li class="active"><a href="payroll.php">Payroll Data</a></li>
 		<li ><a href="sms.php">SMS & Mail</a>
+=======
+		<li class="active"><a href="payroll">Transactions</a></li>
+		<li ><a href="sms">SMS & Mail</a>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 		</li>
 	</ul>
 	<div class="tab-content col-kk-12">
@@ -151,7 +167,11 @@ while($row = mysqli_fetch_array($result))
 					<td><?=number_format($row["basic"]); ?> .00</td>
 					<td><?=number_format($row["gross"]); ?> .00</td>
 					<td><?=number_format($row["net"]); ?> .00</td>
+<<<<<<< HEAD
 					<td><?php echo' <a class="btn btn-black btn-xs" target="_blank"  href="print_slip.php?pdf=1&id='.$row["p_id"].'">PDF</a> '?></td>
+=======
+					<td><?php echo' <a class="btn btn-black btn-xs" target="_blank"  href="print_slip?pdf=1&id='.$row["p_id"].'">PDF</a> '?></td>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 					<td>
 					<div class="btn-group">
 						<button data-toggle="dropdown" class="btn btn-danger btn-xs dropdown-toggle">Action <span class="caret"></span></button>
@@ -480,7 +500,11 @@ while($row = mysqli_fetch_array($result))
 			</form> 
 			<script>
 				
+<<<<<<< HEAD
 		/*===============Payroll Data Calculator================*/
+=======
+		/*===============Payroll Transactions Calculator================*/
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 			  $(document).ready(function(){
 				var count = 1;
 				

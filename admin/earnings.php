@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 <?php  $connect = mysqli_connect("localhost", "root", "", "hrm"); ?>
+=======
+<?php  $connect = mysqli_connect("remotemysql.com", "TFAhTVfagm", "6khKBw8IRi", "TFAhTVfagm"); ?>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 <?php include '../users/session.php'; ?>
 <!DOCTYPE html>
 <html class="" lang="en">
@@ -29,10 +33,17 @@
 	<div class="widget">
 	<ul class="nav nav-tabs">
 		<li class="active"><a href="#">Earnings</a></li>
+<<<<<<< HEAD
 		<li><a href="allowances.php"> Allowances</a>
 		<li><a href="deductions.php">Deductions</a></li>
 		<li><a href="banks.php">Banks</a></li>
 		<li><a href="../employee/departments.php">Departments</a></li>
+=======
+		<li><a href="allowances"> Allowances</a>
+		<li><a href="deductions">Deductions</a></li>
+		<li><a href="banks">Banks</a></li>
+		<li><a href="../employee/departments">Departments</a></li>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 		
 		</li>
 	</ul>
@@ -372,7 +383,11 @@
 			 }  
 		});  
 		swal({title:'Success!', text:'J-Group Successfuly Saved!', type: 'success', 
+<<<<<<< HEAD
 			 onClose: function () {window.location.href='earnings.php';}
+=======
+			 onClose: function () {window.location.href='earnings';}
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 			});  
 		}
 	}

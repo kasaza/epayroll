@@ -3,7 +3,11 @@ session_start();
 require_once 'users/class.user.php';
 ?>
 <?php  
+<<<<<<< HEAD
 $connect = mysqli_connect("localhost", "root", "", "hrm");  
+=======
+$connect = mysqli_connect("remotemysql.com", "TFAhTVfagm", "6khKBw8IRi", "TFAhTVfagm");  
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
   
 $query = "SELECT * FROM designation";  
 $result = mysqli_query($connect, $query);   
@@ -104,7 +108,11 @@ $user_home = new USER();
 
 if(!$user_home->is_logged_in())
 {
+<<<<<<< HEAD
  $user_home->redirect('users/login.php');
+=======
+ $user_home->redirect('users/login');
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 }
 
 $stmt = $user_home->runQuery("SELECT * FROM tbl_users WHERE id_no=:id_no");
@@ -139,7 +147,11 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 					<i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
 				  </a>
 				  <ul class="dropdown-right dropdown-user">
+<<<<<<< HEAD
 					  <li><a href="users/logout.php"><i class="fa fa-sign-out fa-fw"></i><strong> Logout</strong></a>
+=======
+					  <li><a href="users/logout"><i class="fa fa-sign-out fa-fw"></i><strong> Logout</strong></a>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 					  </li>
 				  </ul>
 			  </li>
@@ -182,7 +194,11 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 <div class="main-content">
 	<ul class="nav nav-tabs">
 	   <li class="active"><a href="#">Dashboard</a></li>
+<<<<<<< HEAD
 	   <li><a href="calendar.php">Calendar</a></li>
+=======
+	   <li><a href="calendar">Calendar</a></li>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 	</ul>
 	<div class="tab-content col-kk-12">
 	<!-------DESIGNATION TABLE------>

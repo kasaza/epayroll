@@ -1,6 +1,10 @@
 
 <?php 
+<<<<<<< HEAD
  $connect = mysqli_connect("localhost", "root", "", "hrm");  
+=======
+ $connect = mysqli_connect("remotemysql.com", "TFAhTVfagm", "6khKBw8IRi", "TFAhTVfagm");  
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
  $query = "SELECT * FROM deductions  ORDER BY ded_id DESC";  
  $result = mysqli_query($connect, $query);  
 ?>  
@@ -34,10 +38,17 @@
 <div class="main-content">
 <!-------PAGE TABS------>
 	<ul class="nav nav-tabs">
+<<<<<<< HEAD
 		<li><a href="earnings.php">Earnings</a></li>
 		<li><a href="allowances.php"> Allowances</a></li>
 		<li class="active"><a href="#">Deductions</a></li>
 		<li><a href="banks.php">Banks</a></li>
+=======
+		<li><a href="earnings">Earnings</a></li>
+		<li><a href="allowances"> Allowances</a></li>
+		<li class="active"><a href="#">Deductions</a></li>
+		<li><a href="banks">Banks</a></li>
+>>>>>>> 0e4cc7824f2ecd9f890c54ad5298241ed59b8ea7
 	</ul>
 <!-------END OF MAIN CONTENT------>
 	<div class="tab-content col-kk-12">
