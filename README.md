@@ -82,7 +82,7 @@ This project is licensed under the MIT License.
 
 Developed by Sylvester Kasaza  
 Whatsapp: +254755140545  
-For inquiries, please contact: kasazax@gmail.com
+For inquiries, please contact: kasazax@gmail.com  
 Supported by: BitDefence Labs and Syncrovate Technologies  
 Nairobi - Kenya.  
 
